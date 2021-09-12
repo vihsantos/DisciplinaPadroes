@@ -3,13 +3,16 @@ import java.util.Map;
 
 public abstract class FiguraFactory {
     
-    public static FiguraFactory factory(String nome) {
-        FiguraFactory figura;
+    public static Map<String , FiguraFactory> hashmap(){
         Map<String , FiguraFactory> figuras = new HashMap<>();
         figuras.put("Circulo", new CirculoFactory());
         figuras.put("Quadrado", new QuadradoFactory());
         figuras.put("Triangulo", new TrEquilateroFactory());
-
+        return figuras;
+    }
+    public static FiguraFactory factory(String nome) {
+        Map<String , FiguraFactory> figuras = hashmap();
+        FiguraFactory figura;
         if (figuras.containsKey(nome)){
             figura= figuras.get(nome);
             return figura;
@@ -25,6 +28,12 @@ public abstract class FiguraFactory {
     }
 
     public void sequencia(){
-        //
+        Map<String , FiguraFactory> figuras = hashmap();
+        while(true){
+            for (FiguraFactory figura : figuras.values()) {
+                FiguraInterface fig = figura.pegarFigura();
+                System.out.println(fig);
+            }
+        }
     }
 }
