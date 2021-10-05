@@ -27,13 +27,4 @@ public abstract class FiguraFactory {
         return figura;
     }
 
-    public void sequencia(){
-        Map<String , FiguraFactory> figuras = hashmap();
-        while(true){
-            for (FiguraFactory figura : figuras.values()) {
-                FiguraInterface fig = figura.pegarFigura();
-                System.out.println(fig);
-            }
-        }
-    }
 }
