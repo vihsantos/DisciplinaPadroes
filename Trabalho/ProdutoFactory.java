@@ -1,4 +1,0 @@
-// Factory
-public class ProdutoFactory {
-    
-}
