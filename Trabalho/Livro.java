@@ -14,6 +14,9 @@ public class Livro implements ProdutoInterface{
     public Livro() {
     }
 
+    public Livro(String nome2, String codigo2) {
+    }
+
     @Override
     public double getPreco() {
         return preco;

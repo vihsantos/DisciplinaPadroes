@@ -7,6 +7,8 @@ public class Curso implements ProdutoInterface{
     String nome;
     double preco;
 
+    public Curso(String nome2, String codigo2) {
+    }
     public List<Disciplina> getDisciplinas() {
         return disciplinas;
     }

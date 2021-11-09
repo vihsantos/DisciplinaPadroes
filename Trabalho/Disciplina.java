@@ -16,6 +16,9 @@ public class Disciplina implements ProdutoInterface{
     public Disciplina() {
     }
 
+    public Disciplina(String nome2, String codigo2) {
+    }
+
     @Override
     public double getPreco() {
         return preco;
