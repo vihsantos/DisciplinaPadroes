@@ -22,43 +22,17 @@ public class Livro implements ProdutoInterface{
         return preco;
     }
 
-
-
-    public String getCodigo() {
-        return codigo;
-    }
-
-
-
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-
-
-
-    public String getNome() {
-        return nome;
-    }
-
-
 
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-
-
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
-
-
 
     public void setPreco(double preco) {
         this.preco = preco;

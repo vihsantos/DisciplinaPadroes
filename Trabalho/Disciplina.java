@@ -28,32 +28,16 @@ public class Disciplina implements ProdutoInterface{
         this.preco = preco;
     }
 
-    public int getChTotal() {
-        return chTotal;
-    }
-
     public void setChTotal(int chTotal) {
         this.chTotal = chTotal;
-    }
-
-    public double getPctCumprido() {
-        return pctCumprido;
     }
 
     public void setPctCumprido(double pctCumprido) {
         this.pctCumprido = pctCumprido;
     }
 
-    public String getCodigo() {
-        return codigo;
-    }
-
     public void setCodigo(String codigo) {
         this.codigo = codigo;
-    }
-
-    public String getNome() {
-        return nome;
     }
 
     public void setNome(String nome) {
