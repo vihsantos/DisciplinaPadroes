@@ -1,5 +1,3 @@
-package Factory;
-
 public abstract class ProdutoFactory {
     String nome;
     String codigo;
@@ -9,10 +7,10 @@ public abstract class ProdutoFactory {
         this.codigo=codigo;
     }
 
-    public ProdutoFactory getFactory(TipoProduto tipo, String nome, String codigo){
+    public static ProdutoFactory getFactory(TipoProduto tipo){
         
-        if(tipo.name().equals("Livro")) return new LivroFactory(nome, codigo);
-        else if (tipo.name().equals("Disciplina")) return new DisciplinaFactory(nome, codigo);
+        if(tipo.name().equals("Livro")) return new LivroFactory();
+        else if (tipo.name().equals("Disciplina")) return new DisciplinaFactory();
         else
         return null;
     }
@@ -22,7 +20,7 @@ public abstract class ProdutoFactory {
     public abstract ProdutoInterface criarProduto();
 
 	
-	public ProdutoInterface getProduto() {
+	public ProdutoInterface getProduto(String nome, String codigo) {
 		ProdutoInterface produto = this.criarProduto();
 		return produto;
 	}

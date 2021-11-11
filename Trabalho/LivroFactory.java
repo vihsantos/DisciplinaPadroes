@@ -1,5 +1,3 @@
-package Factory;
-
 public class LivroFactory extends ProdutoFactory{
     public LivroFactory(String codigo, String nome) {
 		super();

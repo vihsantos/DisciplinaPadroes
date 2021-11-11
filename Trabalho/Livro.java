@@ -1,5 +1,3 @@
-package Factory;
-
 public class Livro implements ProdutoInterface {
     String nome;
     String codigo;
@@ -7,8 +5,8 @@ public class Livro implements ProdutoInterface {
     String isbn;
     
     public Livro(String codigo, String nome) {
-        this.setNome(nome);
-        this.setCodigo(codigo);
+        this.nome=nome;
+        this.codigo=codigo;
     }
 
     @Override
@@ -16,11 +14,10 @@ public class Livro implements ProdutoInterface {
         return preco;
     }
 
-    public void setNome(String nome) {
+    @Override
+    public void set(String nome, String codigo) {
         this.nome = nome;
-    }
-
-    public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
+
 }
