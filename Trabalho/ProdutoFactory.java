@@ -11,7 +11,8 @@ public abstract class ProdutoFactory {
         
         if(tipo.name().equals("Livro")) return new LivroFactory();
         else if (tipo.name().equals("Disciplina")) return new DisciplinaFactory();
-        else
+        else if (tipo.name().equals("Curso")) return new CursoFactory();
+        
         return null;
     }
 
