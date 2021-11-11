@@ -1,4 +1,4 @@
-public class ProdutoFactory {
+public abstract class ProdutoFactory {
     String nome;
     String codigo;
 
@@ -16,4 +16,12 @@ public class ProdutoFactory {
     }
 
     public ProdutoFactory(){}
+
+    public abstract ProdutoInterface criarProduto();
+
+	
+	public ProdutoInterface getProduto() {
+		ProdutoInterface produto = this.criarProduto();
+		return produto;
+	}
 }
