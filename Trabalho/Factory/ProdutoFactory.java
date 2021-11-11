@@ -1,3 +1,5 @@
+package Factory;
+
 public abstract class ProdutoFactory {
     String nome;
     String codigo;

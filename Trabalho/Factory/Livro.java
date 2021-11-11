@@ -1,11 +1,12 @@
-public class Disciplina implements ProdutoInterface{
+package Factory;
+
+public class Livro implements ProdutoInterface {
     String nome;
     String codigo;
     double preco;
-    int chTotal;
-    double pctCumprido;
+    String isbn;
     
-    public Disciplina(String codigo, String nome) {
+    public Livro(String codigo, String nome) {
         this.setNome(nome);
         this.setCodigo(codigo);
     }
