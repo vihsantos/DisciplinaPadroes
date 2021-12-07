@@ -1,3 +1,0 @@
-public interface Prototype {
-    public Prototype duplicar();
-}
